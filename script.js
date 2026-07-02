@@ -131,11 +131,13 @@ function renderCaseList() {
   }
 
   visible.forEach((item) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "case-card";
-    button.setAttribute("aria-selected", String(item.case_id === state.selectedCaseId));
-    button.innerHTML = `
+    const card = document.createElement("div");
+    card.className = "case-card";
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-selected", String(item.case_id === state.selectedCaseId));
+    card.setAttribute("aria-pressed", String(item.case_id === state.selectedCaseId));
+    card.innerHTML = `
       <h3>${escapeHtml(item.title)}</h3>
       <p>${escapeHtml(truncate(item.description, 210))}</p>
       <div class="case-meta">
@@ -145,12 +147,19 @@ function renderCaseList() {
         <span>${escapeHtml(labelize(item.evidence_strength))}</span>
       </div>
     `;
-    button.addEventListener("click", () => {
+    const selectCase = () => {
       state.selectedCaseId = item.case_id;
       renderCaseList();
       renderCaseDetail();
+    };
+    card.addEventListener("click", selectCase);
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        selectCase();
+      }
     });
-    list.appendChild(button);
+    list.appendChild(card);
   });
 
   renderCaseDetail();
