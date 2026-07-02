@@ -1,6 +1,15 @@
-# Cultural Labor Observatory Public Snapshot
+# Cultural Labor Observatory Public Dashboard
 
-This folder contains the static public edition of the Cultural Labor Observatory. It is safe to publish because it exposes the case index, coverage counts, selected cases, and methodology text without exposing the internal review interface, database credentials, local snapshots, or admin tools.
+This folder contains the static public dashboard for the Cultural Labor Observatory. It is safe to publish because it exposes only the public case index, coverage counts, selected cases, filters, public source links, and methodology text. It does not expose the internal review interface, database credentials, local snapshots, collected source files, or admin tools.
+
+## What The Dashboard Shows
+
+- public coverage metrics
+- selected exemplar cases
+- region, target, and evidence-strength charts
+- searchable and filterable case cards
+- case detail panel with actors, targets, issues, verification needs, and public source links
+- methodology text explaining the discovery and case-selection process
 
 ## Build
 
@@ -24,7 +33,7 @@ Open:
 outputs/public_observatory/index.html
 ```
 
-Because the data is packaged as a JavaScript file, the page can be opened directly from the filesystem and can also be deployed as a static website.
+Because the data is packaged as a JavaScript file, the dashboard can be opened directly from the filesystem and can also be deployed as a static website.
 
 ## Publish
 
@@ -49,7 +58,7 @@ README.md
 
 ## Update Cycle
 
-The public site should be rebuilt after each reviewed discovery/import cycle. The recurring 15-day automation should:
+The public dashboard should be rebuilt after each reviewed discovery/import cycle. The recurring 15-day automation should:
 
 1. Run a balanced discovery search with multilingual and source-direct terms.
 2. Log a new discovery session, including weak and negative results.
