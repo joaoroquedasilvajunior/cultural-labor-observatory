@@ -1,0 +1,3 @@
+build_public_observatory.py
+*.tmp
+.DS_Store

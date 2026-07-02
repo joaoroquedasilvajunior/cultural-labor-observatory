@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cultural Labor Observatory</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Research observatory</p>
+        <h1>Cultural Labor Observatory</h1>
+        <p class="lede">
+          Mapping cultural labor conflicts around streaming platforms, digital platforms,
+          and AI systems with multilingual sources, provenance, and review status.
+        </p>
+      </div>
+      <div class="status-panel" aria-label="Publication status">
+        <span class="status-dot"></span>
+        <span>Candidate index · public snapshot</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="metrics" aria-label="Observatory coverage">
+        <div class="metric">
+          <span id="case-count">0</span>
+          <label>case seeds</label>
+        </div>
+        <div class="metric">
+          <span id="session-count">0</span>
+          <label>discovery sessions</label>
+        </div>
+        <div class="metric">
+          <span id="query-count">0</span>
+          <label>logged queries</label>
+        </div>
+        <div class="metric">
+          <span id="negative-count">0</span>
+          <label>weak/negative results</label>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article>
+          <h2>Selected cases</h2>
+          <p>
+            The current qualitative pair compares a transnational streaming campaign with a
+            non-US national regulatory conflict involving the same platform.
+          </p>
+          <div id="selected-cases" class="selected-list"></div>
+        </article>
+        <article>
+          <h2>Coverage</h2>
+          <div class="bars" id="region-bars"></div>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <div>
+            <h2>Case index</h2>
+            <p>Promoted case seeds. Candidate status does not mean a case is verified or imported.</p>
+          </div>
+          <label class="search">
+            <span>Search</span>
+            <input id="case-search" type="search" placeholder="country, actor, platform, issue">
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>Region</th>
+                <th>Target</th>
+                <th>Evidence</th>
+              </tr>
+            </thead>
+            <tbody id="case-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="methodology">
+        <h2>Methodology</h2>
+        <div id="methodology-text"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="generated-at"></span>
+      <span>Built from reviewed observatory artifacts and discovery logs.</span>
+    </footer>
+
+    <script src="data/cases.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
