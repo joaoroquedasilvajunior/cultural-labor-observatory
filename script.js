@@ -15,6 +15,9 @@ const escapeHtml = (value) =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+const classSlug = (value) => String(value || "unknown").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "unknown";
+const chipClass = (kind, value) => `chip chip-${kind} chip-${kind}-${classSlug(value)}`;
+const chip = (kind, value, label = labelize(value)) => `<span class="${chipClass(kind, value)}">${escapeHtml(label)}</span>`;
 
 const state = {
   search: "",
@@ -104,10 +107,11 @@ function renderSelectedCases() {
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(truncate(item.description, 420))}</p>
         <div class="tag-row">
-          <span class="tag">${escapeHtml(item.country)}</span>
-          <span class="tag">${escapeHtml(labelize(item.target_class))}</span>
-          <span class="tag">${escapeHtml(labelize(item.evidence_strength))}</span>
-          <span class="tag">${formatNumber((item.known_urls || []).length)} sources</span>
+          ${chip("region", item.region_world)}
+          ${chip("country", item.country, item.country)}
+          ${chip("target", item.target_class)}
+          ${chip("evidence", item.evidence_strength)}
+          ${chip("source", "source-count", `${formatNumber((item.known_urls || []).length)} sources`)}
         </div>
       `;
       wrap.appendChild(card);
@@ -141,10 +145,10 @@ function renderCaseList() {
       <h3>${escapeHtml(item.title)}</h3>
       <p>${escapeHtml(truncate(item.description, 210))}</p>
       <div class="case-meta">
-        <span>${escapeHtml(labelize(item.region_world))}</span>
-        <span>${escapeHtml(item.country)}</span>
-        <span>${escapeHtml(labelize(item.target_class))}</span>
-        <span>${escapeHtml(labelize(item.evidence_strength))}</span>
+        ${chip("region", item.region_world)}
+        ${chip("country", item.country, item.country)}
+        ${chip("target", item.target_class)}
+        ${chip("evidence", item.evidence_strength)}
       </div>
     `;
     const selectCase = () => {
@@ -202,10 +206,11 @@ function renderCaseDetail() {
     <h3>${escapeHtml(item.title)}</h3>
     <p>${escapeHtml(item.description)}</p>
     <div class="tag-row">
-      <span class="tag">${escapeHtml(labelize(item.region_world))}</span>
-      <span class="tag">${escapeHtml(item.country)}</span>
-      <span class="tag">${escapeHtml(item.language)}</span>
-      <span class="tag">${escapeHtml(labelize(item.evidence_strength))}</span>
+      ${chip("region", item.region_world)}
+      ${chip("country", item.country, item.country)}
+      ${chip("language", item.language, item.language)}
+      ${chip("target", item.target_class)}
+      ${chip("evidence", item.evidence_strength)}
     </div>
     <div class="detail-list">
       ${renderArray("Actors", item.likely_actors)}

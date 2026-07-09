@@ -283,15 +283,141 @@ h3 {
   margin-top: 12px;
 }
 
-.tag {
+.tag,
+.chip {
   display: inline-flex;
   align-items: center;
   min-height: 24px;
   padding: 2px 8px;
-  border: 1px solid var(--line);
-  background: var(--subtle);
-  color: var(--muted);
+  border: 1px solid var(--chip-border, var(--line));
+  background: var(--chip-bg, var(--subtle));
+  color: var(--chip-ink, var(--muted));
   font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.chip-region-africa {
+  --chip-bg: #f3ead9;
+  --chip-border: #d9b977;
+  --chip-ink: #6c4b12;
+}
+
+.chip-region-east-asia,
+.chip-region-south-asia,
+.chip-region-southeast-asia {
+  --chip-bg: #e6f0ff;
+  --chip-border: #9fbce8;
+  --chip-ink: #224f8f;
+}
+
+.chip-region-europe {
+  --chip-bg: #e7edf8;
+  --chip-border: #a8b9dd;
+  --chip-ink: #324f86;
+}
+
+.chip-region-latin-america {
+  --chip-bg: #fbe8df;
+  --chip-border: #e5a083;
+  --chip-ink: #8a3b22;
+}
+
+.chip-region-north-america {
+  --chip-bg: #e5f3ef;
+  --chip-border: #96c7b8;
+  --chip-ink: #1f6a58;
+}
+
+.chip-region-oceania {
+  --chip-bg: #e5f2fb;
+  --chip-border: #8ebddd;
+  --chip-ink: #1f6284;
+}
+
+.chip-region-transnational {
+  --chip-bg: #f0e7fb;
+  --chip-border: #bd9add;
+  --chip-ink: #65348b;
+}
+
+.chip-target-streaming-platforms {
+  --chip-bg: #e4f5f1;
+  --chip-border: #74bdae;
+  --chip-ink: #0b6258;
+}
+
+.chip-target-digital-creator-platforms {
+  --chip-bg: #e7ecfb;
+  --chip-border: #93a7df;
+  --chip-ink: #334a91;
+}
+
+.chip-target-platform-employers-and-intermediaries {
+  --chip-bg: #fff1d6;
+  --chip-border: #e5b75c;
+  --chip-ink: #7a5200;
+}
+
+.chip-target-policy-and-regulatory-targets {
+  --chip-bg: #e8f2df;
+  --chip-border: #a5c77f;
+  --chip-ink: #456c20;
+}
+
+.chip-target-ai-systems-and-model-providers {
+  --chip-bg: #f4e7f5;
+  --chip-border: #c99ad0;
+  --chip-ink: #7a367f;
+}
+
+.chip-target-unclassified {
+  --chip-bg: #eef1f2;
+  --chip-border: #c6d0d2;
+  --chip-ink: #566265;
+}
+
+.chip-evidence-strong-primary {
+  --chip-bg: #def2e7;
+  --chip-border: #77be96;
+  --chip-ink: #1f6d3c;
+}
+
+.chip-evidence-strong-secondary {
+  --chip-bg: #e4effb;
+  --chip-border: #8ab4de;
+  --chip-ink: #275d90;
+}
+
+.chip-evidence-mixed {
+  --chip-bg: #fff0d8;
+  --chip-border: #e4b56a;
+  --chip-ink: #7b530f;
+}
+
+.chip-evidence-weak {
+  --chip-bg: #f7e6e6;
+  --chip-border: #d89a9a;
+  --chip-ink: #8a3333;
+}
+
+.chip-country {
+  --chip-bg: #fff7dd;
+  --chip-border: #dcc269;
+  --chip-ink: #624f04;
+}
+
+.chip-language {
+  --chip-bg: #edf0f5;
+  --chip-border: #bac5d2;
+  --chip-ink: #475567;
+}
+
+.chip-source {
+  --chip-bg: #eef5e8;
+  --chip-border: #a9c98c;
+  --chip-ink: #496b2d;
 }
 
 .explorer {
@@ -416,13 +542,10 @@ select:focus,
   margin-top: 2px;
 }
 
-.case-meta span {
+.case-meta .chip {
   min-width: 0;
   padding: 6px 8px;
-  background: #f9fbfb;
-  color: var(--muted);
   font-size: 0.78rem;
-  overflow-wrap: anywhere;
 }
 
 .detail-panel {
