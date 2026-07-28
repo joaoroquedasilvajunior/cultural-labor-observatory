@@ -130,8 +130,20 @@ function renderCaseList() {
   resultCount.textContent = `${formatNumber(visible.length)} ${visible.length === 1 ? "case" : "cases"}`;
   list.innerHTML = "";
 
+  if (!visible.length) {
+    state.selectedCaseId = null;
+    list.innerHTML = `
+      <div class="empty-state">
+        <strong>No matching cases</strong>
+        <p>Try a broader search term or reset one of the filters.</p>
+      </div>
+    `;
+    renderCaseDetail();
+    return;
+  }
+
   if (!visible.some((item) => item.case_id === state.selectedCaseId)) {
-    state.selectedCaseId = visible[0]?.case_id || cases[0]?.case_id;
+    state.selectedCaseId = visible[0].case_id;
   }
 
   visible.forEach((item) => {
