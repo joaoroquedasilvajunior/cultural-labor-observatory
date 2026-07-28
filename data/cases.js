@@ -1,34 +1,35 @@
 window.CLO_DATA = {
-  "generated_at": "2026-07-02T13:35:43.773895Z",
+  "generated_at": "2026-07-28T14:13:06.487569Z",
   "title": "Cultural Labor Observatory",
   "summary": {
-    "case_seed_count": 42,
-    "session_count": 12,
-    "query_count": 128,
-    "candidate_count": 60,
-    "negative_result_count": 51,
+    "case_seed_count": 50,
+    "session_count": 15,
+    "query_count": 163,
+    "candidate_count": 76,
+    "negative_result_count": 67,
     "regions": {
-      "africa": 4,
-      "europe": 11,
-      "latin_america": 7,
+      "africa": 6,
+      "east_asia": 1,
+      "europe": 13,
+      "latin_america": 8,
       "north_america": 7,
       "oceania": 1,
       "south_asia": 1,
       "southeast_asia": 1,
-      "transnational": 10
+      "transnational": 12
     },
     "target_classes": {
-      "ai_systems_and_model_providers": 4,
+      "ai_systems_and_model_providers": 5,
       "digital_creator_platforms": 5,
-      "platform_employers_and_intermediaries": 8,
-      "policy_and_regulatory_targets": 4,
-      "streaming_platforms": 14,
+      "platform_employers_and_intermediaries": 10,
+      "policy_and_regulatory_targets": 6,
+      "streaming_platforms": 17,
       "unclassified": 7
     },
     "evidence_strength": {
       "mixed": 12,
-      "strong_primary": 7,
-      "strong_secondary": 22,
+      "strong_primary": 14,
+      "strong_secondary": 23,
       "weak": 1
     }
   },
@@ -2010,6 +2011,404 @@ window.CLO_DATA = {
         "Capture the November 20, 2023 Spotify phase-out statement from an official or near-primary source",
         "Capture the December 2023 government clarification/reversal source and determine what changed legally",
         "Create an extraction fixture with separated actors, targets, claims, demands, policy proposal, regulatory process, and outcome"
+      ]
+    },
+    {
+      "case_id": "uk_2026_child_voice_actors_ai_contract_open_letter",
+      "title": "Child voice actors and agents oppose AI voice clauses in children's animation contracts",
+      "description": "A June 22, 2026 open letter signed by agents, actors, parents, and supporters rejects contract terms requiring child performers to allow AI capture, cloning, training, or reuse of their voices. Spanish-language coverage links the dispute to reports about Peppa Pig/Hasbro and notes calls for explicit no-AI clauses in contracts.",
+      "region_world": "europe",
+      "country": "United Kingdom / transnational children's animation",
+      "language": "en",
+      "target_class": "platform_employers_and_intermediaries",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "open_letter"
+      ],
+      "likely_actors": [
+        "child voice actors",
+        "talent agents for young performers",
+        "parents and supporters",
+        "Association of Agents of Young Artists"
+      ],
+      "likely_targets": [
+        "studios and producers using AI voice clauses",
+        "Hasbro / Peppa Pig rights and production chain",
+        "AI voice-cloning vendors"
+      ],
+      "likely_issues": [
+        "ai_voice_cloning",
+        "performer_consent",
+        "child_performer_protection",
+        "contract_terms",
+        "commercial_reuse_of_voice"
+      ],
+      "known_urls": [
+        "https://openletter.earth/open-letter-to-studios-and-producers-on-the-use-of-child-actors-voices-in-ai-0e5f1c37",
+        "https://elpais.com/cultura/2026-06-26/una-carta-abierta-condena-que-obliguen-a-los-actores-infantiles-a-ceder-sus-voces-a-la-ia-en-peppa-pig.html"
+      ],
+      "source_leads": [
+        "https://openletter.earth/open-letter-to-studios-and-producers-on-the-use-of-child-actors-voices-in-ai-0e5f1c37",
+        "https://elpais.com/cultura/2026-06-26/una-carta-abierta-condena-que-obliguen-a-los-actores-infantiles-a-ceder-sus-voces-a-la-ia-en-peppa-pig.html"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_03_15_day_update",
+      "verification_needs": [
+        "Capture the open letter page and metadata before signature counts change.",
+        "Confirm the Association of Agents of Young Artists role and whether it has a stable public homepage or statement.",
+        "Find any direct Hasbro or producer response suitable for provenance.",
+        "Do not treat the case as verified until captured sources are reviewed."
+      ]
+    },
+    {
+      "case_id": "transnational_2026_music_ai_recording_label_standard",
+      "title": "Music creator and industry coalition urges streaming adoption of standard AI recording labels",
+      "description": "On July 10, 2026, a transnational coalition spanning recorded-music creator, performer, independent-sector, and industry organizations announced voluntary AI-Generated and AI-Assisted labels for sound recordings and called for broad adoption across the music ecosystem, including streaming platforms. Brazilian and New Zealand organizations republished or localized the initiative, supporting its transnational reach.",
+      "region_world": "transnational",
+      "country": "Transnational recorded-music and streaming ecosystem",
+      "language": "en",
+      "target_class": "streaming_platforms",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "industry_standard_campaign"
+      ],
+      "likely_actors": [
+        "IFPI",
+        "Worldwide Independent Network",
+        "IMPALA",
+        "SAG-AFTRA",
+        "Human Artistry Campaign",
+        "Recording Academy",
+        "independent music organizations and recording artists"
+      ],
+      "likely_targets": [
+        "music streaming platforms",
+        "digital music distributors and aggregators",
+        "record labels and music uploaders"
+      ],
+      "likely_issues": [
+        "ai_generated_music",
+        "platform_transparency",
+        "recording_metadata",
+        "artist_attribution",
+        "streaming_royalty_integrity"
+      ],
+      "known_urls": [
+        "https://www.riaa.com/music-community-introduces-new-labeling-programto-distinguish-generative-ai-in-sound-recordings/",
+        "https://www.ubc.org.br/publicacoes/noticias/industria-lanca-selo-identificar-musica-ia",
+        "https://recordedmusic.co.nz/"
+      ],
+      "source_leads": [
+        "https://www.riaa.com/music-community-introduces-new-labeling-programto-distinguish-generative-ai-in-sound-recordings/",
+        "https://www.ubc.org.br/publicacoes/noticias/industria-lanca-selo-identificar-musica-ia",
+        "https://recordedmusic.co.nz/"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_21_15_day_update",
+      "verification_needs": [
+        "Capture the primary coalition statement and dated regional republications.",
+        "Confirm whether streaming services formally adopt the labels and how the metadata travels through distributors.",
+        "Separate creator-representation claims from record-company interests during fixture review.",
+        "Do not mark verified or import before captured sources and extraction fixtures are reviewed."
+      ]
+    },
+    {
+      "case_id": "za_2026_saga_actor_royalties_constitutional_court_update",
+      "title": "South African Guild of Actors says statutory performer-royalty clauses survived Constitutional Court referral",
+      "description": "On 2026-06-26, SAGA told members that South Africa's Constitutional Court did not strike down statutory actor-royalty clauses in the Copyright and Performers' Protection Amendment Bills. SAGA says the clauses remain in the Bills and that pressure should shift back to Parliament and ministers to bring the royalty framework into force.",
+      "region_world": "africa",
+      "country": "South Africa",
+      "language": "en",
+      "target_class": "policy_and_regulatory_targets",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "legal_policy_update"
+      ],
+      "likely_actors": [
+        "South African Guild of Actors",
+        "South African screen actors and performers"
+      ],
+      "likely_targets": [
+        "South African Parliament",
+        "Minister responsible for regulations",
+        "Copyright Amendment Bill",
+        "Performers' Protection Amendment Bill",
+        "audiovisual producers and broadcasters"
+      ],
+      "likely_issues": [
+        "performer_royalties",
+        "audiovisual_residuals",
+        "copyright_reform",
+        "fair_remuneration",
+        "ongoing_exploitation_of_existing_works"
+      ],
+      "known_urls": [
+        "https://saguildofactors.co.za/2026/06/26/actor-royalties-todays-court-decision-and-what-it-means-for-you/"
+      ],
+      "source_leads": [
+        "https://saguildofactors.co.za/2026/06/26/actor-royalties-todays-court-decision-and-what-it-means-for-you/"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Capture SAGA's statement and the Constitutional Court judgment/referral documents.",
+        "Confirm the exact sections and bill status before fixture creation.",
+        "Separate SAGA's interpretation from the court's formal holding.",
+        "Do not mark verified until captured sources are reviewed."
+      ]
+    },
+    {
+      "case_id": "ke_2026_ecitizen_pavrisk_royalty_collection_digitization",
+      "title": "Kenya centralizes music and audiovisual royalty collection through eCitizen and PAVRISK",
+      "description": "Kenyan reporting on 2026-07-27 says royalty collection and distribution moved to the eCitizen platform with PAVRISK appointed to collect through the digital system. The context includes KECOBO's suspension of KAMP's license and stated goals of improving transparency, reducing revenue leakages, and meeting royalty-remittance requirements.",
+      "region_world": "africa",
+      "country": "Kenya",
+      "language": "en",
+      "target_class": "platform_employers_and_intermediaries",
+      "evidence_strength": "strong_secondary",
+      "likely_event_types": [
+        "royalty_collection_platform_shift"
+      ],
+      "likely_actors": [
+        "PAVRISK",
+        "Kenya Copyright Board",
+        "Kenyan artists and rightsholders",
+        "KAMP",
+        "music and audiovisual users"
+      ],
+      "likely_targets": [
+        "eCitizen platform",
+        "PAVRISK royalty portal",
+        "Kenya Copyright Board licensing regime",
+        "businesses using music and audiovisual works"
+      ],
+      "likely_issues": [
+        "royalty_collection_transparency",
+        "digital_licensing",
+        "cmo_governance",
+        "artist_earnings",
+        "royalty_distribution_accountability"
+      ],
+      "known_urls": [
+        "https://www.standardmedia.co.ke/health/amp/national/article/2001553864/government-moves-copyright-royalties-to-ecitizen-platform",
+        "https://pavrisk.or.ke/news_articles/the-consolidated-music-and-audio-visual-tariffs-2026-2028-are-now-available/",
+        "https://www.kbc.co.ke/kecobo-suspends-kamps-licence-for-90-days/"
+      ],
+      "source_leads": [
+        "https://www.standardmedia.co.ke/health/amp/national/article/2001553864/government-moves-copyright-royalties-to-ecitizen-platform",
+        "https://pavrisk.or.ke/news_articles/the-consolidated-music-and-audio-visual-tariffs-2026-2028-are-now-available/",
+        "https://www.kbc.co.ke/kecobo-suspends-kamps-licence-for-90-days/"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Find and capture KECOBO or eCitizen primary notices for the SLA and go-live.",
+        "Capture PAVRISK tariff and portal pages.",
+        "Confirm KAMP's response and whether rightsholder payouts were delayed or redirected.",
+        "Treat as a royalty-accountability/collection-infrastructure case until primary regulator evidence is captured."
+      ]
+    },
+    {
+      "case_id": "jp_2026_voice_ai_publicity_rights_guidance_nippairen",
+      "title": "Japan Actors Union welcomes Justice Ministry draft guidance on unauthorized AI use of voices",
+      "description": "Japan's Ministry of Justice study committee advanced draft interpretive guidance on civil liability for unauthorized use of portraits and voices through generative AI. On 2026-07-28, Nippairen welcomed the draft and directed performers to guidance and reporting channels for unauthorized voice, digital replica, and AI-contract concerns.",
+      "region_world": "east_asia",
+      "country": "Japan",
+      "language": "ja",
+      "target_class": "policy_and_regulatory_targets",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "policy_guidance_response"
+      ],
+      "likely_actors": [
+        "Japan Actors Union / Nippairen",
+        "Japanese voice actors",
+        "singers and performers",
+        "Japan Ministry of Justice study committee"
+      ],
+      "likely_targets": [
+        "generative AI voice imitation services",
+        "unauthorized AI covers",
+        "AI-generated posts monetizing copied voices",
+        "civil liability guidance"
+      ],
+      "likely_issues": [
+        "ai_voice_cloning",
+        "publicity_rights",
+        "performer_identity",
+        "takedown_and_compensation",
+        "unauthorized_training_and_generation"
+      ],
+      "known_urls": [
+        "https://www.moj.go.jp/MINJI/minji07_00400.html",
+        "https://www.nippairen.com/about/post-moj-guideline-2026.html",
+        "https://www.nippon.com/en/news/yjj2026072700813/japan-panel-backs-liability-for-unauthorized-ai-use-of-voices.html"
+      ],
+      "source_leads": [
+        "https://www.moj.go.jp/MINJI/minji07_00400.html",
+        "https://www.nippairen.com/about/post-moj-guideline-2026.html",
+        "https://www.nippon.com/en/news/yjj2026072700813/japan-panel-backs-liability-for-unauthorized-ai-use-of-voices.html"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Capture the Ministry of Justice study page and draft/report PDFs.",
+        "Capture Nippairen's 2026-07-28 comment and explanatory document.",
+        "Confirm final Ministry of Justice report once released, expected around August.",
+        "Do not treat the draft as final law."
+      ]
+    },
+    {
+      "case_id": "ar_2026_actor_union_ai_regulation_campaign",
+      "title": "Argentine actors' union campaigns for AI rules protecting voice, image, identity, and artistic labor",
+      "description": "In May and June 2026, Argentina's actors' union launched a public campaign and participated in Senate discussion demanding AI regulation for artistic work. The union frames image, expressions, and voice as work tools and calls for informed consent, remuneration, legislative protection, and collective-bargaining strategies.",
+      "region_world": "latin_america",
+      "country": "Argentina",
+      "language": "es",
+      "target_class": "ai_systems_and_model_providers",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "public_campaign_and_policy_advocacy"
+      ],
+      "likely_actors": [
+        "Asociación Argentina de Actores y Actrices",
+        "Argentine actors and actresses",
+        "audiovisual and cultural-sector unions"
+      ],
+      "likely_targets": [
+        "AI regulation",
+        "legislators",
+        "collective bargaining agreements",
+        "audiovisual employers using generative AI"
+      ],
+      "likely_issues": [
+        "ai_voice_likeness",
+        "informed_consent",
+        "remuneration",
+        "labor_rights",
+        "collective_bargaining",
+        "performer_identity"
+      ],
+      "known_urls": [
+        "https://actores.org.ar/regulemos-el-uso-de-la-ia/",
+        "https://actores.org.ar/regulacion-ia-senado/",
+        "https://actores.org.ar/ia-reunion-mayo-26/"
+      ],
+      "source_leads": [
+        "https://actores.org.ar/regulemos-el-uso-de-la-ia/",
+        "https://actores.org.ar/regulacion-ia-senado/",
+        "https://actores.org.ar/ia-reunion-mayo-26/"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Capture the campaign page, Senate intervention, and cross-union meeting statement.",
+        "Identify any specific draft bill or legislative follow-up.",
+        "Separate awareness-campaign evidence from later policy outcomes."
+      ]
+    },
+    {
+      "case_id": "fr_2026_deezer_ai_uploads_fraud_takedown_royalty_pool",
+      "title": "Deezer says AI music exceeded half of daily uploads and expands fraud/takedown controls to protect royalty pools",
+      "description": "On 2026-07-21, Deezer reported that detected AI-generated tracks had exceeded 50% of daily uploads and said it would take down AI tracks used for streaming fraud or inactive for at least six months. Deezer explicitly links the measures to reducing fraud and payment dilution for artists and songwriters.",
+      "region_world": "europe",
+      "country": "France / transnational music streaming",
+      "language": "en",
+      "target_class": "streaming_platforms",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "platform_policy_change"
+      ],
+      "likely_actors": [
+        "Deezer",
+        "human artists and songwriters",
+        "music rightsholders",
+        "AI music uploaders"
+      ],
+      "likely_targets": [
+        "AI-generated tracks on Deezer",
+        "streaming fraud operations",
+        "algorithmic recommendations",
+        "royalty-payment systems"
+      ],
+      "likely_issues": [
+        "ai_generated_music",
+        "streaming_fraud",
+        "royalty_pool_dilution",
+        "platform_labeling",
+        "artist_income"
+      ],
+      "known_urls": [
+        "https://newsroom-deezer.com/2026/07/ai-music-exceeds-50-percent-daily-uploads-deezer/",
+        "https://www.whathifi.com/streaming-entertainment/heres-why-you-might-be-listening-to-ai-music-on-your-favourite-music-streaming-service-without-realising-and-how-to-stop-it"
+      ],
+      "source_leads": [
+        "https://newsroom-deezer.com/2026/07/ai-music-exceeds-50-percent-daily-uploads-deezer/",
+        "https://www.whathifi.com/streaming-entertainment/heres-why-you-might-be-listening-to-ai-music-on-your-favourite-music-streaming-service-without-realising-and-how-to-stop-it"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Capture Deezer newsroom update and any supplier-policy changes.",
+        "Find artist, songwriter, union, or CMO responses before framing as a labor conflict rather than a platform-policy response.",
+        "Confirm whether takedown and detection rules affect creator appeals or legitimate AI-assisted music."
+      ]
+    },
+    {
+      "case_id": "transnational_2026_tidal_ai_royalty_exclusion_policy_primary",
+      "title": "TIDAL policy excludes fully AI-generated music from royalties while allowing labeled AI content",
+      "description": "TIDAL's official AI policy, updated 2026-07-15, says fully AI-generated music is allowed if compliant but will be labeled and excluded from royalties. Press coverage says the policy applies to TIDAL Upload and is framed around directing remuneration to music created, written, and performed by people.",
+      "region_world": "transnational",
+      "country": "Transnational music streaming",
+      "language": "en / pt-BR",
+      "target_class": "streaming_platforms",
+      "evidence_strength": "strong_primary",
+      "likely_event_types": [
+        "platform_policy_change"
+      ],
+      "likely_actors": [
+        "TIDAL",
+        "human artists and recording rightsholders",
+        "AI music uploaders",
+        "independent artists using TIDAL Upload"
+      ],
+      "likely_targets": [
+        "fully AI-generated music",
+        "TIDAL royalty systems",
+        "direct-to-fan sales",
+        "impersonation and streaming-fraud uploads"
+      ],
+      "likely_issues": [
+        "ai_generated_music",
+        "royalty_eligibility",
+        "streaming_fraud",
+        "artist_impersonation",
+        "platform_labeling"
+      ],
+      "known_urls": [
+        "https://support.tidal.com/hc/pt-br/articles/48031883413521-Pol%C3%ADtica-de-IA",
+        "https://www1.folha.uol.com.br/amp/ilustrada/2026/06/tidal-nao-pagara-royalties-a-musicas-feitas-inteiramente-com-inteligencia-artificial.shtml",
+        "https://au.variety.com/2026/music/global/tidal-label-ai-generated-music-ban-royalties-from-ai-songs-38114/"
+      ],
+      "source_leads": [
+        "https://support.tidal.com/hc/pt-br/articles/48031883413521-Pol%C3%ADtica-de-IA",
+        "https://www1.folha.uol.com.br/amp/ilustrada/2026/06/tidal-nao-pagara-royalties-a-musicas-feitas-inteiramente-com-inteligencia-artificial.shtml",
+        "https://au.variety.com/2026/music/global/tidal-label-ai-generated-music-ban-royalties-from-ai-songs-38114/"
+      ],
+      "status": "candidate",
+      "selected_exemplar": false,
+      "discovery_session_id": "discovery_2026_07_28_new_cases_update",
+      "verification_needs": [
+        "Capture official TIDAL policy in English and localized versions if available.",
+        "Confirm exact effective date and treatment of substantially AI-generated music.",
+        "Find musician, union, or rights-society responses before treating this as a collective labor conflict."
       ]
     }
   ],
