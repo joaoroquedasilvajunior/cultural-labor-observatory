@@ -537,7 +537,7 @@ select:focus,
 
 .case-meta {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px;
   margin-top: 2px;
 }
@@ -552,6 +552,24 @@ select:focus,
   position: sticky;
   top: 16px;
   padding: 20px;
+}
+
+.empty-state {
+  width: 100%;
+  padding: 18px;
+  border: 1px dashed var(--line-strong);
+  background: var(--paper);
+  color: var(--muted);
+}
+
+.empty-state strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+
+.empty-state p {
+  margin: 0;
 }
 
 .detail-list {
